@@ -1,92 +1,50 @@
-#super store
-# Ski-dashboard
-## Recommended Structure and Order
-### 1.	Project Title / Headline
-A concise, descriptive name for the dashboard.
-Example: 
-❄️ Snowy Analytics: Global Ski Resort Insights Dashboard
-A dynamic, interactive data visualization tool built to explore ski resort data worldwide—focusing on regional comparisons, resort attributes, terrain complexity, and skier suitability.
+# 📊 Super Store Sales Dashboard
 
-### 2.	Short Description / Purpose
-1–2 sentences explaining what the dashboard does and why it exists.
+### 1. Project Title / Headline
+**Super Store Sales Dashboard**
+A dynamic and interactive data visualization tool built to explore sales performance, profit margins, and key operational metrics across various dimensions for a Super Store.
 
-Example: 
-The Snowy Analytics Dashboard is a visually engaging and analytical Power BI report designed to help users explore and compare over 499 ski resorts across 38 countries and 5 continents. The dashboard focuses on highlighting major ski resort features like summer skiing availability, night skiing, lift types, and slope difficulty. This tool is intended for use by tourism analysts, winter sports enthusiasts, travel companies, and data-driven strategists who seek to understand trends and characteristics of ski resorts globally.
+### 2. Short Description / Purpose
+The Super Store Sales Dashboard is a visually engaging Power BI report designed to provide comprehensive insights into sales and profit trends. It enables users to analyze performance by segment, region, category, payment mode, subcategory, ship mode, and geographic location. This tool is intended for use by sales managers, business analysts, and strategic planners to monitor performance, identify key drivers, and make data-driven decisions.
 
-### 3.	Tech Stack
-List the key technologies used to build the dashboard.
+### 3. Tech Stack
+The dashboard was built using the following tools and technologies:
+* **📊 Power BI Desktop** – Main data visualization platform used for report creation.
+* **📂 Power Query** – Likely used for data transformation and cleaning.
+* **🧠 DAX (Data Analysis Expressions)** – Likely used for calculated measures and conditional logic.
+* **📝 Data Modeling** – Relationships established among tables to enable cross-filtering and aggregation.
 
-Example:
-The dashboard was built using the following tools and technologies:<br>
-•	📊 Power BI Desktop – Main data visualization platform used for report creation.<br>
-•	📂 Power Query – Data transformation and cleaning layer for reshaping and preparing the data.<br>
-•	🧠 DAX (Data Analysis Expressions) – Used for calculated measures, dynamic visuals, and conditional logic.<br>
-•	📝 Data Modeling – Relationships established among tables (resorts, snow, and data_dictionary) to enable cross-filtering and aggregation.<br>
-•	📁 File Format – .pbix for development and .png for dashboard previews.
+### 4. Data Source
+* **Source:** Internal Super Store Sales Database.
+* **Data Structure:** Data includes sales transactions, profit figures, customer segments, product categories, regional information, payment methods, and shipping details, along with geographical data for sales by state in the USA.
 
-### 4.	Data Source
-More info on where the data comes from and how it’s structured
-Example:
-Source: Ski-resort-stats.com & NASA Earth Observations. 
+### 5. Features / Highlights
 
-Data on ~500 ski resorts around the world, including details on their location, prices, slopes, lifts, and seasons, as well as a complementary table with the snow cover around the world for each month of 2022.
+* **Business Problem**
+    Many businesses struggle to quickly grasp their sales performance across diverse product lines, customer segments, and geographical regions. Understanding which products are most profitable, which regions are underperforming, or how different customer segments contribute to revenue can be challenging with raw transactional data.
 
+* **Goal of the Dashboard**
+    To deliver an interactive visual tool that:
+    * Enables users to explore Super Store sales and profit data comprehensively.
+    * Supports decisions such as inventory management, marketing strategy, and regional expansion.
+    * Uncovers trends in sales performance, profitability, and operational efficiency across various business dimensions.
 
-### 5.	Features / Highlights
-The best dashboard explanation format. 
-•	Business problem
-•	Goal of the dashboard
-•	Walk through of key visuals (briefly!)
-•	Business impact & Insights
+* **Walkthrough of Key Visuals**
+    * **Key Filters (Top):** Interactive slicers allow users to filter all visuals by Region (Central, East, South, West).
+    * **Sum of Sales and Sum of Profit by State (Top Right):** A geographical map of the USA displays sales and profit distribution by state.
+    * **Sum of Sales by Segment (Middle Left):** A donut chart showing sales distribution across customer segments (Home Office, Consumer, Corporate).
+    * **Sum of Sales by Region (Middle Center):** A donut chart illustrating the percentage of total sales contributed by each region.
+    * **Sales by Category (Middle Right):** A bar chart ranking product categories (Office Supplies, Technology, Furniture) by total sales.
+    * **Sum of Sales by Payment Mode (Bottom Left):** A donut chart displaying sales distribution across payment modes (COD, Online, Cards).
+    * **Sales by SubCategory (Bottom Center Left):** A horizontal bar chart ranking top-performing subcategories.
+    * **Sales by Ship Mode (Bottom Center Right):** A horizontal bar chart showing sales distribution across different ship modes.
+    * **Sum of Sales by Month and Year (Bottom Right):** A line chart visualizing sales trends over time, comparing 2019 and 2020 by month.
 
-Example:
-•	Business Problem
-The global ski tourism industry generates billions in revenue, yet travelers, tour operators, and analysts often lack an intuitive way to compare resorts across countries. 
+* **Business Impact & Insights**
+    * **Strategic Planning:** Identify top-performing regions, categories, and segments to inform growth strategies.
+    * **Operational Efficiency:** Analyze ship modes and payment methods to help optimize logistics and financial processes.
+    * **Performance Monitoring:** Track monthly and yearly sales trends to identify seasonality and evaluate sales initiatives.
+    * **Profitability Analysis:** Understand regional profitability to identify areas for improvement.
 
-Key questions such as:
-Which regions offer the most family-friendly or expert-level skiing?
-Where is summer skiing available?
-What countries have the most well-equipped resorts?
-… are difficult to answer quickly with raw data.
-
-•	Goal of the Dashboard
-To deliver an interactive visual tool that:
-Enables users to explore ski resorts globally.
-Supports decisions such as vacation planning, regional marketing, or infrastructure investment.
-Uncovers trends in terrain, accessibility, and tourism capacity by region and resort.
-
-•	Walkthrough of Key Visuals
--	Key KPIs (Top Left)
-Total number of resorts: 499
-Resorts with summer skiing: 29
-Resorts with night skiing: 204
-Child-friendly resorts: 495
-Countries covered: 38
-Continents represented: 5
--	Continent Filter Panel
-An interactive slicer lets users filter all visuals by selected continents, such as Europe or Asia.
--	Top Countries with Most Resorts (Bar Chart)
-Bar chart ranks countries like Austria, France, and the U.S. by number of ski resorts.
--	Slopes by Resort (Line Chart)
-Displays the distribution of slope types (beginner, intermediate, expert, and total). Helps identify which resorts favor beginners vs. experts.
--	 Resorts by Skill Level (Dual Line Charts)
-Two line visuals side by side: one for resorts that cater to beginners, another for experts—allowing skill-level segmentation.
--	Elevation Stats (Grouped Bar Chart)
-Compare the highest and lowest elevation points of resorts to understand terrain steepness and potential snow quality.
--	Lift Types by Resort (Stacked Bar Chart)
-Stacked bar chart showing:
-Gondola lifts
-Chair lifts
-Surface lifts
-Total lifts
-This helps users gauge resort infrastructure and capacity.
-
-•	Business Impact & Insights
-Marketing Optimization: Travel agencies can use this dashboard to identify key selling points for different demographics (e.g., child-friendly resorts or expert terrain).
-Strategic Expansion: Resort developers can spot underdeveloped regions with high potential.
-Vacation Planning: Tourists can plan trips based on slope availability, elevation, and terrain difficulty.
-Regional Analysis: Governments and tourism bodies can analyze competitiveness by region.
-
-### 6.	Screenshots / Demos
-Show what the dashboard looks like. - ![Alt text](https://github.com/username/repo/assets/image.png)
-Example: ![Dashboard Preview](https://github.com/suryawanshisumit/super-store-sales-dashboard/blob/main/super%20store%20sales.png)
+### 6. Screenshots / Demos
+![Dashboard Preview](https://github.com/suryawanshisumit/super-store-sales-dashboard/blob/main/super%20store%20sales.png)
